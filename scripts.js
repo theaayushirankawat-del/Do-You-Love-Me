@@ -1,17 +1,47 @@
-
-
-//click yes btn
-function clickYesButton() {
-    alert('I love you too <3');
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffd1dc, #ffb6c1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
 }
 
-//move button on hover
-function hoverNoButton() {
-    // random from 0 to 1, then multiply with screen size
-    let x = Math.random() * window.innerWidth;
-    let y = Math.random() * window.innerHeight;
+.card {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
 
-    document.getElementById('no-button').style.left = x + 'px';
-    document.getElementById('no-button').style.top = y +'px';
-    
+.card h1 {
+  color: #ff6f91;
+}
+
+.card p {
+  color: #ff8fab;
+}
+
+.btns {
+  margin-top: 20px;
+  position: relative;
+}
+
+button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.yes {
+  background: #ff6f91;
+  color: white;
+}
+
+.no {
+  background: #ffc2d1;
+  position: absolute;
 }
